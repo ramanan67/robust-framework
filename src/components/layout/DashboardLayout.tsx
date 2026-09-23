@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
-import { useTheme } from '../../context/ThemeContext';
+
 import { Button } from '../ui/Button';
 import ThemeToggle from '../ui/ThemeToggle';
 import { motion, AnimatePresence } from 'framer-motion';
