@@ -11,7 +11,6 @@ import {
     Image as ImageIcon, 
     Sparkles,
     Activity,
-    Info,
     Fingerprint
 } from 'lucide-react';
 import { clsx } from 'clsx';

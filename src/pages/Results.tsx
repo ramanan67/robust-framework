@@ -1,7 +1,6 @@
-import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/Card';
 import { 
-    LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, 
+    XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, 
     AreaChart, Area, BarChart, Bar, Cell, Legend
 } from 'recharts';
 import { motion } from 'framer-motion';
@@ -173,7 +172,7 @@ const Results = () => {
                                         }}
                                     />
                                     <Bar dataKey="suppressed" name="Suppression %" radius={[0, 10, 10, 0]} barSize={32}>
-                                        {sensitiveData.map((entry, index) => (
+                                        {sensitiveData.map((_entry, index) => (
                                             <Cell key={`cell-${index}`} fill={index % 2 === 0 ? '#10b981' : '#34d399'} fillOpacity={0.8} />
                                         ))}
                                     </Bar>

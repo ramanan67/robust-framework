@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../components/ui/Card';
-import { Eye, Lock, Scale, ShieldAlert } from 'lucide-react';
+import { Eye, Lock, Scale } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Privacy = () => {

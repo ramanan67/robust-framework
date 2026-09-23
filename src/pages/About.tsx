@@ -1,5 +1,5 @@
 import { Card, CardContent } from '../components/ui/Card';
-import { Code2, Database, Layers, ShieldCheck, Sparkles } from 'lucide-react';
+import { Code2, Database, Layers, ShieldCheck } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { clsx } from 'clsx';
 

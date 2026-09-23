@@ -15,15 +15,12 @@ import {
     Menu,
     X,
     ChevronLeft,
-    ChevronRight,
-    Sun,
-    Moon
+    ChevronRight
 } from 'lucide-react';
 import { clsx } from 'clsx';
 
 const DashboardLayout = () => {
     const { user, logout } = useAuth();
-    const { theme, toggleTheme } = useTheme();
     const location = useLocation();
     const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
