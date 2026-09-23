@@ -98,7 +98,7 @@ async def predict(file: UploadFile = File(...)):
             privacy_pred_idx = torch.argmax(privacy_prob, dim=1).item()
 
         # 4. Map indices to labels (Assume binary for now based on prompt examples)
-        utility_labels = ["Not Smiling", "Smiling"] # Example utility
+        utility_labels = ["Smiling", "Not Smiling"] # Flipped to match model output
         privacy_labels = ["Male", "Female"] # Example privacy sensitive attribute
         
         # Safe access
